@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct API {
-    static let itbook = "https://api.itbook.store/1.0"
-    static let searchBookList = "\(itbook)/search"
-    static let searchBook = "\(itbook)/books"
-}
-
 class APIRequester {
-    static let shared = APIRequester()
-    
     enum APIError: Error {
         case invalidURL
         case loadFailed
         case noData
     }
+    
+    struct API {
+        static let itbook = "https://api.itbook.store/1.0"
+        static let searchBookList = "\(itbook)/search"
+        static let searchBook = "\(itbook)/books"
+    }
+    
+    static let shared = APIRequester()
     
     func searchBookList(keyword: String, page: Int, completion: @escaping (Result<[Book], Error>) -> Void) {
         let urlString = "\(API.searchBookList)/\(keyword)/\(page)"

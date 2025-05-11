@@ -23,21 +23,11 @@ class SearchTableViewCell: UITableViewCell {
         
         Task {
             do {
-                bookImageView.image = try await loadImage(book: book)
+                bookImageView.image = try await ImageCache.shared.loadImage(book: book,
+                                                                            cacheOption: .disk)
             } catch {
                 bookImageView.image = nil
             }
         }
-    }
-}
-
-func loadImage(book: Book) async throws -> UIImage {
-    guard let imageURL = URL(string: book.imageURLString) else { throw APIRequester.APIError.invalidURL }
-    
-    let data = try await URLSession.shared.data(from: imageURL).0
-    if let image = UIImage(data: data) {
-        return image
-    } else {
-        throw APIRequester.APIError.loadFailed
     }
 }
