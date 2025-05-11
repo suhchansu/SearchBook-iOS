@@ -32,7 +32,7 @@ class SearchTableViewCell: UITableViewCell {
         Task {
             do {
                 bookImageView.image = try await ImageCache.shared.loadImage(book: book,
-                                                                            cacheOption: .disk)
+                                                                            cacheOption: .memory)
             } catch {
                 bookImageView.image = nil
             }

@@ -63,8 +63,8 @@ class ImageCache {
             }
         case .disk:
             do {
-                let data = try Data(contentsOf: diskCachURL.appendingPathComponent(fileID))
-                if let cachedImage = UIImage(data: data) {
+                let cachedImageData = try Data(contentsOf: diskCachURL.appendingPathComponent(fileID))
+                if let cachedImage = UIImage(data: cachedImageData) {
                     return cachedImage
                 } else {
                     throw ImageCacheError.invalidDirectory
