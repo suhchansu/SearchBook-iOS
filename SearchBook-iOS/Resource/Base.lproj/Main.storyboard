@@ -22,6 +22,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="um7-kd-UyX"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fgV-o3-pzW"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="JXQ-sj-dyW"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-bq-Vmc">
