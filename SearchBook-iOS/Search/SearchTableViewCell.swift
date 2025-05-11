@@ -17,27 +17,25 @@ class SearchTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        titleLabel.text = nil
+        priceLabel.text = nil
+        bookImageView.image = nil
+    }
+    
     func setBook(_ book: Book) {
         titleLabel.text = book.title
         priceLabel.text = book.price
         
         Task {
             do {
-                bookImageView.image = try await loadImage(book: book)
+                bookImageView.image = try await ImageCache.shared.loadImage(book: book,
+                                                                            cacheOption: .memory)
             } catch {
                 bookImageView.image = nil
             }
         }
-    }
-}
-
-func loadImage(book: Book) async throws -> UIImage {
-    guard let imageURL = URL(string: book.imageURLString) else { throw APIRequester.APIError.invalidURL }
-    
-    let data = try await URLSession.shared.data(from: imageURL).0
-    if let image = UIImage(data: data) {
-        return image
-    } else {
-        throw APIRequester.APIError.loadFailed
     }
 }

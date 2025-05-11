@@ -37,7 +37,8 @@ class BookViewController: UIViewController {
         
         Task {
             do {
-                bookImageView.image = try await loadImage(book: book)
+                bookImageView.image = try await ImageCache.shared.loadImage(book: book,
+                                                                            cacheOption: .disk)
             } catch {
                 bookImageView.image = nil
             }
