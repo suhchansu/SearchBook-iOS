@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    private var bookList: [Book] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,11 +29,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return bookList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: Constant.cellID, for: indexPath) as? SearchTableViewCell {
+        if bookList.count > indexPath.row,
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constant.cellID, for: indexPath) as? SearchTableViewCell {
+            cell.setBook(bookList[indexPath.row])
             return cell
         } else {
             return UITableViewCell()
@@ -53,6 +57,26 @@ extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let keyword = searchBar.text else { return }
         
+        APIRequester.shared.searchBookList(keyword: keyword, page: 1) { [weak self] in
+            switch $0 {
+            case .failure(let error):
+                let alert = UIAlertController(title: "오류",
+                                              message: error.localizedDescription,
+                                              preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .default)
+                alert.addAction(action)
+                DispatchQueue.main.async { [weak self] in
+                    self?.present(alert, animated: true)
+                }
+            case .success(let bookList):
+                self?.bookList = bookList
+                
+                DispatchQueue.main.async { [weak self] in
+                    self?.tableView.reloadData()
+                }
+            }
+        }
+
         searchBar.resignFirstResponder()
     }
 }
