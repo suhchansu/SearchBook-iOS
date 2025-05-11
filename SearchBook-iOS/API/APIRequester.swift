@@ -10,6 +10,7 @@ import Foundation
 struct API {
     static let itbook = "https://api.itbook.store/1.0"
     static let searchBookList = "\(itbook)/search"
+    static let searchBook = "\(itbook)/books"
 }
 
 class APIRequester {
@@ -41,6 +42,28 @@ class APIRequester {
                 } else {
                     completion(.success(bookList.books))
                 }
+            } catch let error {
+                completion(.failure(error))
+            }
+        }.resume()
+    }
+    
+    func searchBook(isbn13: String, completion: @escaping (Result<Book, Error>) -> Void) {
+        let urlString = "\(API.searchBook)/\(isbn13)"
+        guard let url = URL(string: urlString) else {
+            completion(.failure(APIError.invalidURL))
+            return
+        }
+        
+        URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+            guard let data else {
+                completion(.failure(APIError.loadFailed))
+                return
+            }
+            
+            do {
+                let book = try JSONDecoder().decode(Book.self, from: data)
+                completion(.success(book))
             } catch let error {
                 completion(.failure(error))
             }

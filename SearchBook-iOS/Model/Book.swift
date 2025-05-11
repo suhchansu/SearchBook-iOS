@@ -28,6 +28,7 @@ struct BookList: Codable {
 }
 
 struct Book: Codable {
+    // API.searchBookList 모델
     let title: String
     let subtitle: String
     let isbn13: String
@@ -35,10 +36,22 @@ struct Book: Codable {
     let imageURLString: String
     let urlString: String
 
+    // API.searchBook 모델
+    let error: String?
+    let authors: String?
+    let publisher: String?
+    let language: String?
+    let isbn10: String?
+    let pages: String?
+    let year: String?
+    let rating: String?
+    let desc: String?
+    
     enum CodingKeys: String, CodingKey {
         case title, subtitle, isbn13, price
         // respone에서 image, url 2개는 형태에 맞는 이름으로 변경
         case imageURLString = "image"
         case urlString = "url"
+        case error, authors, publisher, language, isbn10, pages, year, rating, desc
     }
 }

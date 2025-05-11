@@ -29,15 +29,15 @@ class SearchTableViewCell: UITableViewCell {
             }
         }
     }
+}
+
+func loadImage(book: Book) async throws -> UIImage {
+    guard let imageURL = URL(string: book.imageURLString) else { throw APIRequester.APIError.invalidURL }
     
-    func loadImage(book: Book) async throws -> UIImage {
-        guard let imageURL = URL(string: book.imageURLString) else { throw APIRequester.APIError.invalidURL }
-        
-        let data = try await URLSession.shared.data(from: imageURL).0
-        if let image = UIImage(data: data) {
-            return image
-        } else {
-            throw APIRequester.APIError.loadFailed
-        }
+    let data = try await URLSession.shared.data(from: imageURL).0
+    if let image = UIImage(data: data) {
+        return image
+    } else {
+        throw APIRequester.APIError.loadFailed
     }
 }
