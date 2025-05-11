@@ -11,6 +11,7 @@ class SearchTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bookImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
@@ -21,12 +22,14 @@ class SearchTableViewCell: UITableViewCell {
         super.prepareForReuse()
         
         titleLabel.text = nil
+        subtitleLabel.text = nil
         priceLabel.text = nil
         bookImageView.image = nil
     }
     
     func setBook(_ book: Book) {
         titleLabel.text = book.title
+        subtitleLabel.text = book.subtitle
         priceLabel.text = book.price
         
         Task {

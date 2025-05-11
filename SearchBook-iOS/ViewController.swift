@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     enum Constant {
         static let cellID = "SearchTableViewCell"
-        static let tableViewHeight: CGFloat = 100
+        static let tableViewHeight: CGFloat = 150
         static let mainStoryboardID = "Main"
         static let bookVC = "BookViewController"
     }
