@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CECCF6142DD0A707000122E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CECCF5F52DD0A706000122E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CECCF5FC2DD0A706000122E1;
+			remoteInfo = "SearchBook-iOS";
+		};
+		CECCF61E2DD0A707000122E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CECCF5F52DD0A706000122E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CECCF5FC2DD0A706000122E1;
+			remoteInfo = "SearchBook-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CECCF5FD2DD0A706000122E1 /* SearchBook-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SearchBook-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECCF6132DD0A707000122E1 /* SearchBook-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SearchBook-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECCF61D2DD0A707000122E1 /* SearchBook-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SearchBook-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CECCF6252DD0A707000122E1 /* Exceptions for "SearchBook-iOS" folder in "SearchBook-iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CECCF5FC2DD0A706000122E1 /* SearchBook-iOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CECCF5FF2DD0A706000122E1 /* SearchBook-iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CECCF6252DD0A707000122E1 /* Exceptions for "SearchBook-iOS" folder in "SearchBook-iOS" target */,
+			);
+			path = "SearchBook-iOS";
+			sourceTree = "<group>";
+		};
+		CECCF6162DD0A707000122E1 /* SearchBook-iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SearchBook-iOSTests";
+			sourceTree = "<group>";
+		};
+		CECCF6202DD0A707000122E1 /* SearchBook-iOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SearchBook-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECCF5FA2DD0A706000122E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECCF6102DD0A707000122E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECCF61A2DD0A707000122E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CECCF5F42DD0A706000122E1 = {
+			isa = PBXGroup;
+			children = (
+				CECCF5FF2DD0A706000122E1 /* SearchBook-iOS */,
+				CECCF6162DD0A707000122E1 /* SearchBook-iOSTests */,
+				CECCF6202DD0A707000122E1 /* SearchBook-iOSUITests */,
+				CECCF5FE2DD0A706000122E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CECCF5FE2DD0A706000122E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECCF5FD2DD0A706000122E1 /* SearchBook-iOS.app */,
+				CECCF6132DD0A707000122E1 /* SearchBook-iOSTests.xctest */,
+				CECCF61D2DD0A707000122E1 /* SearchBook-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CECCF5FC2DD0A706000122E1 /* SearchBook-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECCF6262DD0A707000122E1 /* Build configuration list for PBXNativeTarget "SearchBook-iOS" */;
+			buildPhases = (
+				CECCF5F92DD0A706000122E1 /* Sources */,
+				CECCF5FA2DD0A706000122E1 /* Frameworks */,
+				CECCF5FB2DD0A706000122E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CECCF5FF2DD0A706000122E1 /* SearchBook-iOS */,
+			);
+			name = "SearchBook-iOS";
+			packageProductDependencies = (
+			);
+			productName = "SearchBook-iOS";
+			productReference = CECCF5FD2DD0A706000122E1 /* SearchBook-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CECCF6122DD0A707000122E1 /* SearchBook-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECCF62B2DD0A707000122E1 /* Build configuration list for PBXNativeTarget "SearchBook-iOSTests" */;
+			buildPhases = (
+				CECCF60F2DD0A707000122E1 /* Sources */,
+				CECCF6102DD0A707000122E1 /* Frameworks */,
+				CECCF6112DD0A707000122E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CECCF6152DD0A707000122E1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CECCF6162DD0A707000122E1 /* SearchBook-iOSTests */,
+			);
+			name = "SearchBook-iOSTests";
+			packageProductDependencies = (
+			);
+			productName = "SearchBook-iOSTests";
+			productReference = CECCF6132DD0A707000122E1 /* SearchBook-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CECCF61C2DD0A707000122E1 /* SearchBook-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECCF62E2DD0A707000122E1 /* Build configuration list for PBXNativeTarget "SearchBook-iOSUITests" */;
+			buildPhases = (
+				CECCF6192DD0A707000122E1 /* Sources */,
+				CECCF61A2DD0A707000122E1 /* Frameworks */,
+				CECCF61B2DD0A707000122E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CECCF61F2DD0A707000122E1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CECCF6202DD0A707000122E1 /* SearchBook-iOSUITests */,
+			);
+			name = "SearchBook-iOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "SearchBook-iOSUITests";
+			productReference = CECCF61D2DD0A707000122E1 /* SearchBook-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECCF5F52DD0A706000122E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CECCF5FC2DD0A706000122E1 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CECCF6122DD0A707000122E1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CECCF5FC2DD0A706000122E1;
+					};
+					CECCF61C2DD0A707000122E1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CECCF5FC2DD0A706000122E1;
+					};
+				};
+			};
+			buildConfigurationList = CECCF5F82DD0A706000122E1 /* Build configuration list for PBXProject "SearchBook-iOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CECCF5F42DD0A706000122E1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CECCF5FE2DD0A706000122E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECCF5FC2DD0A706000122E1 /* SearchBook-iOS */,
+				CECCF6122DD0A707000122E1 /* SearchBook-iOSTests */,
+				CECCF61C2DD0A707000122E1 /* SearchBook-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECCF5FB2DD0A706000122E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECCF6112DD0A707000122E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECCF61B2DD0A707000122E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECCF5F92DD0A706000122E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECCF60F2DD0A707000122E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECCF6192DD0A707000122E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CECCF6152DD0A707000122E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CECCF5FC2DD0A706000122E1 /* SearchBook-iOS */;
+			targetProxy = CECCF6142DD0A707000122E1 /* PBXContainerItemProxy */;
+		};
+		CECCF61F2DD0A707000122E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CECCF5FC2DD0A706000122E1 /* SearchBook-iOS */;
+			targetProxy = CECCF61E2DD0A707000122E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CECCF6272DD0A707000122E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SearchBook-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suhchansu.SearchBook.SearchBook-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CECCF6282DD0A707000122E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SearchBook-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suhchansu.SearchBook.SearchBook-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CECCF6292DD0A707000122E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CECCF62A2DD0A707000122E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CECCF62C2DD0A707000122E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suhchansu.SearchBook.SearchBook-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchBook-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SearchBook-iOS";
+			};
+			name = Debug;
+		};
+		CECCF62D2DD0A707000122E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suhchansu.SearchBook.SearchBook-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchBook-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SearchBook-iOS";
+			};
+			name = Release;
+		};
+		CECCF62F2DD0A707000122E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suhchansu.SearchBook.SearchBook-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SearchBook-iOS";
+			};
+			name = Debug;
+		};
+		CECCF6302DD0A707000122E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suhchansu.SearchBook.SearchBook-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SearchBook-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECCF5F82DD0A706000122E1 /* Build configuration list for PBXProject "SearchBook-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECCF6292DD0A707000122E1 /* Debug */,
+				CECCF62A2DD0A707000122E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECCF6262DD0A707000122E1 /* Build configuration list for PBXNativeTarget "SearchBook-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECCF6272DD0A707000122E1 /* Debug */,
+				CECCF6282DD0A707000122E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECCF62B2DD0A707000122E1 /* Build configuration list for PBXNativeTarget "SearchBook-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECCF62C2DD0A707000122E1 /* Debug */,
+				CECCF62D2DD0A707000122E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECCF62E2DD0A707000122E1 /* Build configuration list for PBXNativeTarget "SearchBook-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECCF62F2DD0A707000122E1 /* Debug */,
+				CECCF6302DD0A707000122E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECCF5F52DD0A706000122E1 /* Project object */;
+}
