@@ -17,6 +17,14 @@ class SearchTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        titleLabel.text = nil
+        priceLabel.text = nil
+        bookImageView.image = nil
+    }
+    
     func setBook(_ book: Book) {
         titleLabel.text = book.title
         priceLabel.text = book.price
