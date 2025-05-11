@@ -25,7 +25,7 @@
                                     <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="JXQ-sj-dyW"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-bq-Vmc">
+                            <searchBar contentMode="redraw" placeholder="작품명, 작가명, 출판사명 검색" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-bq-Vmc">
                                 <rect key="frame" x="0.0" y="103" width="393" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ZfO-gX-3Ml"/>
